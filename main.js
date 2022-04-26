@@ -152,6 +152,11 @@ getEle("btn-doc").onclick = function () {
 
 // Bài 4
 
+function tinhKhoangCach(tdX, tdY) {
+  d = Math.sqrt((tdXTruong - tdX) ** 2 + (tdYTruong - tdY) ** 2);
+  return d;
+}
+
 getEle("btn-td").onclick = function () {
   // Lấy dữ liệu
   var tenSV1 = getEle("tenSV1").value;
@@ -170,9 +175,25 @@ getEle("btn-td").onclick = function () {
   var tdYTruong = getEle("tdYTruong").value * 1;
 
   // Khai báo biến
-  var dTruong = 0;
   var dSV1 = 0;
+  var dSV2 = 0;
+  var dSV3 = 0;
+  var result = "";
 
   // Tính toán
-  // Tọa độ trường
+  dSV1 = tinhKhoangCach(tdX1, tdY1);
+  dSV2 = tinhKhoangCach(tdX2, tdY2);
+  dSV3 = tinhKhoangCach(tdX3, tdY3);
+  console.log(dSV1, dSV2, dSV3);
+
+  // So sánh
+  if (dSV1 > dSV2 && dSV1 > dSV3) {
+    result = tenSV1 + " xa trường nhất";
+  } else if (dSV2 > dSV1 && dSV2 > dSV3) {
+    result = tenSV2 + " xa trường nhất";
+  } else {
+    result = tenSV3 + " xa trường nhất";
+  }
+
+  console.log(result);
 };
