@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Làm thêm JS Buổi 5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" />
+
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<!-- Bài 1 -->
+	<div class="wrapper">
+		<div class="inner">
+			<!-- <form action=""> -->
+			<h3>Bài 1</h3>
+			<p>Tìm ngày tháng năm</p>
+
+			<label class="form-group">
+				<input id="ngay" type="text" class="form-control" required />
+				<span for="">Ngày</span>
+				<span class="border"></span>
+			</label>
+
+			<label class="form-group">
+				<input id="thang" type="text" class="form-control" required />
+				<span for="">Tháng</span>
+				<span class="border"></span>
+			</label>
+
+			<label class="form-group">
+				<input id="nam" type="text" class="form-control" required />
+				<span for="">Năm</span>
+				<span class="border"></span>
+			</label>
+
+			<div>
+				<button id="btn-ngayHomQua">
+					Ngày hôm qua
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+
+				<button id="btn-mai">
+					Ngày mai
+					<i class="zmdi zmdi-arrow-right"></i>
+				</button>
+			</div>
+			<!-- </form> -->
+			<div class="ketQua" id="ketqua-tinhThue"></div>
+		</div>
+	</div>
+
+	<!-- Bài 2 -->
+	<div class="wrapper">
+		<div class="inner">
+			<!-- <form action=""> -->
+			<h3>Bài 2</h3>
+			<p>Tính số ngày của tháng</p>
+
+			<label class="form-group">
+				<input id="tongThuNhap" type="text" class="form-control" required />
+				<span for="">Tháng</span>
+				<span class="border"></span>
+			</label>
+
+			<label class="form-group">
+				<input id="soNguoiPhuThuoc" type="text" class="form-control" required />
+				<span for="">Năm</span>
+				<span class="border"></span>
+			</label>
+
+			<button id="btn-tinhThue">
+				Tính số ngày
+				<i class="zmdi zmdi-arrow-right"></i>
+			</button>
+
+			<!-- </form> -->
+			<div class="ketQua" id="ketqua-tinhThue"></div>
+		</div>
+	</div>
+
+	<!-- Bài 3 -->
+	<div class="wrapper">
+		<div class="inner">
+			<!-- <form action=""> -->
+			<h3>Bài 3</h3>
+			<p>In ra cách đọc</p>
+
+			<label class="form-group">
+				<input id="soNguyen" type="text" class="form-control" required />
+				<span for="">Số nguyên có 3 chữ số</span>
+				<span class="border"></span>
+			</label>
+
+			<button id="btn-doc">
+				Đọc
+				<i class="zmdi zmdi-arrow-right"></i>
+			</button>
+
+			<!-- </form> -->
+			<div class="ketQua" id="ketqua-doc"></div>
+		</div>
+	</div>
+
+	<!-- Bài 4 -->
+	<div class="wrapper bai-4">
+		<div class="inner">
+			<!-- <form action=""> -->
+			<h3>Bài 4</h3>
+			<p>In tên sinh viên xa trường nhất</p>
+
+			<div class="flex">
+				<p>Sinh viên thứ nhất</p>
+				<label class="form-group">
+					<input id="tenSV1" type="text" class="form-control" required />
+					<span for="">Nhập tên</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdX1" type="text" class="form-control" required />
+					<span for="">Tọa độ x</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdY1" type="text" class="form-control" required />
+					<span for="">Tọa độ y</span>
+					<span class="border"></span>
+				</label>
+			</div>
+			<div class="flex">
+				<p>Sinh viên thứ hai</p>
+				<label class="form-group">
+					<input id="tenSV2" type="text" class="form-control" required />
+					<span for="">Nhập tên</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdX2" type="text" class="form-control" required />
+					<span for="">Tọa độ x</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdY2" type="text" class="form-control" required />
+					<span for="">Tọa độ y</span>
+					<span class="border"></span>
+				</label>
+			</div>
+			<div class="flex">
+				<p>Sinh viên thứ ba</p>
+				<label class="form-group">
+					<input id="tenSV3" type="text" class="form-control" required />
+					<span for="">Nhập tên</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdX3" type="text" class="form-control" required />
+					<span for="">Tọa độ x</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdY3" type="text" class="form-control" required />
+					<span for="">Tọa độ y</span>
+					<span class="border"></span>
+				</label>
+			</div>
+
+			<div class="flex">
+				<p>Tọa độ trường học</p>
+				<label class="form-group">
+					<input id="tdXTruong" type="text" class="form-control" required />
+					<span for="">Tọa độ x</span>
+					<span class="border"></span>
+				</label>
+				<label class="form-group">
+					<input id="tdYTruong" type="text" class="form-control" required />
+					<span for="">Tọa độ y</span>
+					<span class="border"></span>
+				</label>
+			</div>
+
+			<button id="btn-td">
+				Tính
+				<i class="zmdi zmdi-arrow-right"></i>
+			</button>
+
+			<!-- </form> -->
+			<div class="ketQua" id="ketqua-doc"></div>
+		</div>
+	</div>
+
+	<script src="./main.js"></script>
+</body>
+
+</html>
